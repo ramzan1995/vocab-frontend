@@ -1,21 +1,4 @@
 import React from 'react';
-// import Navbar from './components/Navbar';
-// // import TextArea from './components/TextArea';
-// // import VocabTextArea from './components/VocabTextArea';
-// import SignUp from './components/SignUp';
-
-// function App() {
-//   return (
-//     <>
-//     <Navbar/>
-//     <SignUp/>
-//     {/* <VocabTextArea/> */}
-//     </>
-//   );
-// }
-
-// export default App;
-
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Signup from './components/SignUp';
 import Signin from './components/SignIn';
@@ -34,7 +17,7 @@ const App = () => {
         <Route path="/home" element={<PrivateRoute><VocabTextArea /></PrivateRoute>} />
         <Route path="/myvocabs" element={<PrivateRoute><MyVocabs /></PrivateRoute>} />
         <Route path="/" element={<Navigate to="/signin" />} />
-        <Route path="" element={<Navigate to="/home" />} />
+        <Route path="/vocab-frontend" element={<Navigate to="/home" />} />
       </Routes>
       </div>
     </Router>
