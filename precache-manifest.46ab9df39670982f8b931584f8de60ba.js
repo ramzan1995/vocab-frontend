@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9acd46b48d256a1c925b27bcc0ba045f",
+    "revision": "b50b81b2752ad50fe4aed5b23c35fc3c",
     "url": "/vocab-frontend/index.html"
   },
   {
-    "revision": "ac51f91dc2c518c02e43",
+    "revision": "e56c7c57535247d1ecbb",
     "url": "/vocab-frontend/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vocab-frontend/static/js/3.d9aeb76b.chunk.js"
   },
   {
-    "revision": "ac51f91dc2c518c02e43",
-    "url": "/vocab-frontend/static/js/main.beb07785.chunk.js"
+    "revision": "e56c7c57535247d1ecbb",
+    "url": "/vocab-frontend/static/js/main.ef60b58f.chunk.js"
   },
   {
     "revision": "906490244fdea5d31bef",
