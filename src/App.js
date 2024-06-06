@@ -34,6 +34,7 @@ const App = () => {
         <Route path="/home" element={<PrivateRoute><VocabTextArea /></PrivateRoute>} />
         <Route path="/myvocabs" element={<PrivateRoute><MyVocabs /></PrivateRoute>} />
         <Route path="/" element={<Navigate to="/signin" />} />
+        <Route path="" element={<Navigate to="/home" />} />
       </Routes>
       </div>
     </Router>
