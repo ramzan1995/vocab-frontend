@@ -1,24 +1,21 @@
 {
   "files": {
-    "main.css": "/vocab-frontend/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/vocab-frontend/static/js/main.ef60b58f.chunk.js",
-    "main.js.map": "/vocab-frontend/static/js/main.ef60b58f.chunk.js.map",
-    "runtime-main.js": "/vocab-frontend/static/js/runtime-main.f7e04cdd.js",
-    "runtime-main.js.map": "/vocab-frontend/static/js/runtime-main.f7e04cdd.js.map",
-    "static/js/2.de4b792b.chunk.js": "/vocab-frontend/static/js/2.de4b792b.chunk.js",
-    "static/js/2.de4b792b.chunk.js.map": "/vocab-frontend/static/js/2.de4b792b.chunk.js.map",
-    "static/js/3.d9aeb76b.chunk.js": "/vocab-frontend/static/js/3.d9aeb76b.chunk.js",
-    "static/js/3.d9aeb76b.chunk.js.map": "/vocab-frontend/static/js/3.d9aeb76b.chunk.js.map",
+    "main.js": "/vocab-frontend/static/js/main.632b231c.chunk.js",
+    "main.js.map": "/vocab-frontend/static/js/main.632b231c.chunk.js.map",
+    "runtime-main.js": "/vocab-frontend/static/js/runtime-main.85b42749.js",
+    "runtime-main.js.map": "/vocab-frontend/static/js/runtime-main.85b42749.js.map",
+    "static/js/2.a2338172.chunk.js": "/vocab-frontend/static/js/2.a2338172.chunk.js",
+    "static/js/2.a2338172.chunk.js.map": "/vocab-frontend/static/js/2.a2338172.chunk.js.map",
+    "static/js/3.bc8e4d64.chunk.js": "/vocab-frontend/static/js/3.bc8e4d64.chunk.js",
+    "static/js/3.bc8e4d64.chunk.js.map": "/vocab-frontend/static/js/3.bc8e4d64.chunk.js.map",
     "index.html": "/vocab-frontend/index.html",
-    "precache-manifest.46ab9df39670982f8b931584f8de60ba.js": "/vocab-frontend/precache-manifest.46ab9df39670982f8b931584f8de60ba.js",
+    "precache-manifest.b97122278fc0e7e59dd5247657902f14.js": "/vocab-frontend/precache-manifest.b97122278fc0e7e59dd5247657902f14.js",
     "service-worker.js": "/vocab-frontend/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/vocab-frontend/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.de4b792b.chunk.js.LICENSE.txt": "/vocab-frontend/static/js/2.de4b792b.chunk.js.LICENSE.txt"
+    "static/js/2.a2338172.chunk.js.LICENSE.txt": "/vocab-frontend/static/js/2.a2338172.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7e04cdd.js",
-    "static/js/2.de4b792b.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.ef60b58f.chunk.js"
+    "static/js/runtime-main.85b42749.js",
+    "static/js/2.a2338172.chunk.js",
+    "static/js/main.632b231c.chunk.js"
   ]
 }
