@@ -6,8 +6,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+import Alert from '@mui/material/Alert';
+import { Snackbar } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
@@ -33,10 +33,23 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 const Signin = () => {
+  const [alert, setAlert] = useState(null);
   const [formData, setFormData] = useState({
     username: '',
     password: ''
   });
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+      setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+      if (reason === 'clickaway') {
+          return;
+      }
+      setOpen(false);
+  };
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -52,16 +65,33 @@ const Signin = () => {
       .then(res => {
         localStorage.setItem('access_token', res.data.access);
         localStorage.setItem('refresh_token', res.data.refresh);
-        navigate('/home');
+        setAlert({ type: 'success', message: 'Logged in successfully.' });
+        handleClick();
+        setTimeout(() => {
+            navigate('/home');
+        }, 3000);
       })
       .catch(err => {
         console.error(err);
+        handleClick();
+        setAlert({ type: 'error', message: err.message });
       });
   };
 
   return (
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs" style={{ marginTop: '150px'}}>
+      {alert && (
+        <Snackbar
+            open={open}
+            autoHideDuration={3000}
+            onClose={handleClose}
+        >
+            <Alert onClose={handleClose} severity={alert.type} sx={{ width: '100%' }}>
+              {alert.message}
+            </Alert>
+        </Snackbar>
+        )}
         <CssBaseline />
         <Box
           sx={{

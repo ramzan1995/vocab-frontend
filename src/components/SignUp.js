@@ -71,6 +71,7 @@ import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Alert from '@mui/material/Alert';
+import { Snackbar } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
@@ -103,6 +104,18 @@ export default function SignUp() {
     email: '',
     password: ''
   });
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+      setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+      if (reason === 'clickaway') {
+          return;
+      }
+      setOpen(false);
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -115,13 +128,15 @@ export default function SignUp() {
     axios.post('https://vocabsathi.pythonanywhere.com/api/register/', formData)
       .then(res => {
         console.log(res.data);
+        handleClick();
         setAlert({ type: 'success', message: 'You have registered successfully.' });
         setTimeout(() => {
             navigate('/signin');
-        }, 5000);
+        }, 3000);
       })
       .catch(err => {
         console.error(err);
+        handleClick();
         setAlert({ type: 'error', message: err.message });
       });
   };
@@ -130,6 +145,17 @@ export default function SignUp() {
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs" style={{ marginTop: '150px'}}>
         <CssBaseline />
+        {alert && (
+        <Snackbar
+            open={open}
+            autoHideDuration={3000}
+            onClose={handleClose}
+        >
+            <Alert onClose={handleClose} severity={alert.type} sx={{ width: '100%' }}>
+              {alert.message}
+            </Alert>
+        </Snackbar>
+        )}
         <Box
           sx={{
             marginTop: 8,
@@ -200,11 +226,6 @@ export default function SignUp() {
                 </Link>
               </Grid>
             </Grid>
-            {alert && (
-                <Grid item xs={12}>
-                    <Alert severity={alert.type}>{alert.message}</Alert>
-                </Grid>
-            )}
           </Box>
         </Box>
         <Copyright sx={{ mt: 5 }} />
