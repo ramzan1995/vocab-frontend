@@ -14,6 +14,19 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import styled from 'styled-components';
+
+const ResponsiveContainer = styled(Container)`
+  margin-top: 50px;
+
+  @media (min-width: 350px) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 150px;
+  }
+`;
 
 function Copyright(props) {
   return (
@@ -78,7 +91,7 @@ const Signin = () => {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs" style={{ marginTop: '150px'}}>
+      <ResponsiveContainer component="main" maxWidth="xs">
       {alert && (
         <Snackbar
             open={open}
@@ -136,7 +149,7 @@ const Signin = () => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              SIGN IN
             </Button>
             <Grid container>
               <Grid item>
@@ -148,33 +161,8 @@ const Signin = () => {
           </Box>
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
-      </Container>
+      </ResponsiveContainer>
     </ThemeProvider>
-    // <div className='container' style={{paddingTop: '70px'}}>
-    //     <div className='row'>
-    //         <div className='col-12'>
-    //             <div className='card my-3'>
-    //                 <div className='card-header' style={{ backgroundColor: 'rgb(239 255 238)' }}>
-    //                     <h3 className='my-2'>SignIn</h3>
-    //                 </div>
-    //                 <div className='card-body'>
-    //                 <form onSubmit={handleSubmit}>
-    //                     <div className="form-group my-3">
-    //                         <label htmlFor="exampleUserName">Username</label>
-    //                         <input type="text" className="form-control" id="username" name="username" value={formData.username} onChange={handleChange} placeholder="Enter Username" />
-    //                     </div>
-    //                     <div className="form-group my-3">
-    //                         <label htmlFor="exampleInputPassword1">Password</label>
-    //                         <input type="password" className="form-control" id="password" name="password" value={formData.password} onChange={handleChange} placeholder="Password" />
-    //                     </div>
-    //                     <span>Don't have an account ? <Link to="/siugnp">Signup here</Link></span>
-    //                     <button type="submit" className="btn btn-success my-3 py-2 w-100">SignIn</button>
-    //                 </form>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
   )
 }
 
