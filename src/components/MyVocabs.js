@@ -57,7 +57,7 @@ export default function MyVocabs() {
                         <TableCell
                         key={column.id}
                         align={column.align}
-                        style={{ minWidth: column.minWidth, backgroundColor: 'rgb(239 255 238)' }}
+                        style={{ minWidth: column.minWidth, backgroundColor: '#00ffff29' }}
                         >
                         <h6>{column.label}</h6>
                         </TableCell>

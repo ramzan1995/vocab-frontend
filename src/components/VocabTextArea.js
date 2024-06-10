@@ -45,12 +45,12 @@ export default function VocabTextArea() {
         <div className='container my-2' style={{paddingTop: '60px'}}>
         <div className="row">
             <div className="col-12">
-                <div className="mb-3 mt-4" style={{backgroundColor: '#fff',position: '-webkit-sticky', position: 'sticky', top: 70, width: '100%', left: 0, zIndex: 1000}}>
+                <div className="mb-3 mt-2" style={{backgroundColor: '#fff',position: '-webkit-sticky', position: 'sticky', top: 70, width: '100%', left: 0, zIndex: 1000}}>
                     <textarea className="form-control" id="translate" value={translation} rows="2" placeholder='Open any artical and click on any word to see their meaning in hindi.'></textarea>
                 </div>
                 <div className="card">
-                    <div className="card-header" style={{ backgroundColor: 'rgb(239 255 238)' }}>
-                        <h6 className='my-2'>Today's Editorial</h6>
+                    <div className="card-header" style={{ backgroundColor: '#00ffff29' }}>
+                        <h6 className='my-2'>Editorial Articals</h6>
                     </div>
                     <div className="card-body">
                         <div className="accordion" id="accordionExample">
@@ -85,7 +85,7 @@ export default function VocabTextArea() {
                                     page={currentPage}
                                     onChange={handlePageChange}
                                     variant="outlined"
-                                    color='success'
+                                    color='info'
                                 />
                             </Stack>
                         </div>
