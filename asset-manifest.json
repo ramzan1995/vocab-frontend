@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/vocab-frontend/static/js/main.aacefaef.chunk.js",
-    "main.js.map": "/vocab-frontend/static/js/main.aacefaef.chunk.js.map",
-    "runtime-main.js": "/vocab-frontend/static/js/runtime-main.6b06608a.js",
-    "runtime-main.js.map": "/vocab-frontend/static/js/runtime-main.6b06608a.js.map",
-    "static/js/2.48fc1e48.chunk.js": "/vocab-frontend/static/js/2.48fc1e48.chunk.js",
-    "static/js/2.48fc1e48.chunk.js.map": "/vocab-frontend/static/js/2.48fc1e48.chunk.js.map",
-    "static/js/3.cd31bf94.chunk.js": "/vocab-frontend/static/js/3.cd31bf94.chunk.js",
-    "static/js/3.cd31bf94.chunk.js.map": "/vocab-frontend/static/js/3.cd31bf94.chunk.js.map",
+    "main.js": "/vocab-frontend/static/js/main.b4596b50.chunk.js",
+    "main.js.map": "/vocab-frontend/static/js/main.b4596b50.chunk.js.map",
+    "runtime-main.js": "/vocab-frontend/static/js/runtime-main.923575f1.js",
+    "runtime-main.js.map": "/vocab-frontend/static/js/runtime-main.923575f1.js.map",
+    "static/js/2.2ab35647.chunk.js": "/vocab-frontend/static/js/2.2ab35647.chunk.js",
+    "static/js/2.2ab35647.chunk.js.map": "/vocab-frontend/static/js/2.2ab35647.chunk.js.map",
+    "static/js/3.12d1fafd.chunk.js": "/vocab-frontend/static/js/3.12d1fafd.chunk.js",
+    "static/js/3.12d1fafd.chunk.js.map": "/vocab-frontend/static/js/3.12d1fafd.chunk.js.map",
     "index.html": "/vocab-frontend/index.html",
-    "precache-manifest.d2eefae1d4763d229a681c52bcb6042a.js": "/vocab-frontend/precache-manifest.d2eefae1d4763d229a681c52bcb6042a.js",
+    "precache-manifest.15527d259095a1da0fd4c1a7f1226cbd.js": "/vocab-frontend/precache-manifest.15527d259095a1da0fd4c1a7f1226cbd.js",
     "service-worker.js": "/vocab-frontend/service-worker.js",
-    "static/js/2.48fc1e48.chunk.js.LICENSE.txt": "/vocab-frontend/static/js/2.48fc1e48.chunk.js.LICENSE.txt"
+    "static/js/2.2ab35647.chunk.js.LICENSE.txt": "/vocab-frontend/static/js/2.2ab35647.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b06608a.js",
-    "static/js/2.48fc1e48.chunk.js",
-    "static/js/main.aacefaef.chunk.js"
+    "static/js/runtime-main.923575f1.js",
+    "static/js/2.2ab35647.chunk.js",
+    "static/js/main.b4596b50.chunk.js"
   ]
 }
