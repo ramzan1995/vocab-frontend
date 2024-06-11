@@ -105,18 +105,18 @@ function ResponsiveAppBar() {
               )} 
               
               {auth && (
-                <>
-                <MenuItem onClick={handleCloseNavMenu}>
+                [<MenuItem onClick={handleCloseNavMenu}>
                   <Link className='nav-link' to="/home">
                     <Typography textAlign="center">EDITORIALS</Typography>
                   </Link>
-                </MenuItem>
+                </MenuItem>,
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Link className='nav-link' to="/myvocabs">
                     <Typography textAlign="center">MY VOCABS</Typography>
                   </Link>
-                </MenuItem>
-                </>
+                </MenuItem>].map(item => (
+                  item
+                ))
               )}
             </Menu>
           </Box>
@@ -179,18 +179,18 @@ function ResponsiveAppBar() {
               )} 
               
               {!auth && (
-                <>
-                  <MenuItem onClick={handleCloseNavMenu}>
+                  [<MenuItem onClick={handleCloseNavMenu}>
                     <Link className="nav-link" to="/signin">
                       <Typography textAlign="center">SIGN IN</Typography>
                     </Link>
-                  </MenuItem>
+                  </MenuItem>,
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Link className="nav-link" to="signup">
                       <Typography textAlign="center">SIGN UP</Typography>
                     </Link>
-                  </MenuItem>
-                </>
+                  </MenuItem>].map(itm => (
+                    itm
+                  ))
               )}
             </Menu>
           </Box>
